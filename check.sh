@@ -100,7 +100,7 @@ if [ $size -gt 51200 ]; then
 echo
 
 #detect version from url
-version=$(echo "$filename" | sed "s/\./\n/g" | grep -v "[a-zA-Z]" | grep "[0-9]\+")
+version=$(echo "$filename" | sed "s/\./\n/g" | grep -v "[b-zA-Z]" | grep "[0-9]\+")
 
 #check if version matchs version pattern
 echo $version | grep "^[0-9]\+"
